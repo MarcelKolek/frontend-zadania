@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PokéApp</h1>
+    </header>
+
+    <section id="search-section">
+        <h2>Search Pokémon:</h2>
+        <form action="#" method="get">
+            <input type="search" id="search" placeholder="Enter Pokémon name">
+        </form>
+    </section>
+
+    <section id="pokemon-list">
+        <h2>Pokémon List</h2>
+        <ul id="pokemon-ul"></ul>
+        <button id="load-more">Load more</button>
+    </section>
+
+    <section id="pokemon-details">
+        <h2>Pokémon details</h2>
+        <div id="details">
+            <p>Select Pokémon to show details.</p>
+        </div>
+    </section>
+
+    <div id="loading" style="display:none;">Loading...</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

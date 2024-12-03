@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: rgb(255, 206, 47);
+}
+
+#search-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#search-section input {
+    margin-top: 10px;
+    padding: 8px;
+    padding-left: 10px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 16px;
+    border: 2px solid rgb(255, 206, 47);
+}
+
+#pokemon-list {
+    margin-top: 30px;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+#pokemon-list ul {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    list-style-type: none;
+    width: 100%;
+}
+
+.pokemon {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.pokemon:hover {
+    transform: scale(1.1);
+}
+
+.pokemon img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0px;
+}
+
+.pokemon h3 {
+    font-size: 18px;
+    color: rgb(255, 206, 47);
+}
+
+#pokemon-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+}
+
+#pokemon-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#pokemon-details #details {
+    font-size: 16px;
+    color: #333;
+}
+
+#pokemon-details h2 {
+    color: rgb(255, 206, 47);
+}
+
+#loading {
+    font-size: 20px;
+    color: rgb(255, 206, 47);
+    text-align: center;
+    margin-top: 20px;
+}
+
+button#load-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(255, 206, 47);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button#load-more:hover {
+    background-color: #f0c900;
+}
+
+.no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #ff0000;
+    padding: 20px;
+}
