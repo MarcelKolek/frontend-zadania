@@ -6,7 +6,7 @@ async function fetchData(url) {
     try {
         const response = await fetch(url);
         if (!response.ok) {
-            throw new Error(`Failed to fetch resource: ${response.statusText}`);
+            throw new Error(`Failed to fetch: ${response.statusText}`);
         }
         const data = await response.json();
         return data;
@@ -84,7 +84,7 @@ async function searchPokemon(query) {
     const searchQuery = query.trim().toLowerCase();
 
     if (!searchQuery) {
-        alert("Please enter a Pokémon name.");
+        alert("Please enter a Pokémon name."); //usunac
         loadingElement.style.display = 'none';
         return;
     }
