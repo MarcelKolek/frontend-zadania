@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #222;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: rgb(255, 206, 47);
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+nav li{
+  list-style: none;
+  padding: 10px;
+  font-size: x-large;
+  
+}
+
+nav li a {
+  color:  rgb(255, 206, 47);
+}
+
+#search-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#search-section input {
+  margin-top: 10px;
+  padding: 8px;
+  padding-left: 10px;
+  width: 250px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: 2px solid rgb(255, 206, 47);
+}
+
+#pokemon-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pokemon-list li a {
+  text-decoration: none;
+  color:  rgb(255, 206, 47);
+}
+
+#pokemon-list ul {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  list-style-type: none;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pokemon-list main {
+  width: 100%;
+}
+
+.pokemon {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.pokemon:hover {
+  transform: scale(1.1);
+}
+
+.pokemon img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0px;
+}
+
+.pokemon h3 {
+  padding-top: 10px;
+  font-size: 18px;
+  color: rgb(255, 206, 47);
+}
+
+.pokemon.selected {
+  padding: 7px;
+  border: 3px solid #4caf50;
+}
+
+#pokemon-details {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pokemon-details ul {
+  display: block;
+  list-style-type: none;
+}
+
+#pokemon-details #details {
+  font-size: 16px;
+  color: #333;
+}
+
+#pokemon-details h2 {
+  color: rgb(255, 206, 47);
+}
+
+#loading {
+  font-size: 20px;
+  color: rgb(255, 206, 47);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #ff0000;
+  padding: 20px;
+  width: 200%;
+  margin-left: 173%;
+}
+
+#pokemon-list main h2 {
+  text-align: center;
+}
+
+main h2 {
+  padding-top: 40px;
+  font-size: xx-large;
+}
+
+main p {
+  padding-top: 20px;
+  font-size: large;
+  text-align: center;
+}
+
+#favorite {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 2px;
+  padding-left: 2px;
+  width: 150px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: 2px solid rgb(255, 206, 47);
+}
+
+#favorite.add {
+  background-color: white;
+}
+
+#favorite.remove {
+  width: 160px;
+  font-size: small;
+  background-color: rgb(255, 206, 47);
+}
+
+
+#type-filter {
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid rgb(255, 206, 47)
+}
+
+.compare-btn {
+  background-color: white;
+  margin-top: 10px;
+  padding: 2px;
+  width: 150px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: 2px solid rgb(255, 206, 47);
+  cursor: pointer;
+}
+
+.compare-btn.add {
+  border-color: #4caf50;
+}
+
+.compare-btn.remove {
+  width: 160px;
+  border-color: #f44336;
+  font-size: small;
+}
+
+.compare-btn.disabled {
+  background-color: #bdbdbd;
+  border-color: #bdbdbd;
+}
+
+#comparison-layout {
+  text-align: center;
+}
+
+#compare-view{
+  background-color: #fff;
+  padding: 50px;
+  padding-top: 30px;
+  margin-top: 20px;
+  border-radius: 16px;
+  width: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #333;
+}
+
+#compare-view ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
